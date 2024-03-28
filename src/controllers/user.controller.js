@@ -55,8 +55,6 @@ const loginUser = asyncHandler(async (req, res) => {
   // 5. Generate access and refresh tokens
   // 6. Send acc token, ref token and user (w/o rf token and pass)
 
-  console.log("Login Requested");
-
   const { email, password } = req.body
 
   if (!email || !password) {
