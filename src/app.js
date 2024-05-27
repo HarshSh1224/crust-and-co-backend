@@ -11,9 +11,9 @@ app.get("/", (req, res) => {
 })
 
 import userRouter from "./routes/user.routes.js"
-import productsRouter from "./routes/products.routes.js"
+import foodItemsRouter from "./routes/food_item.routes.js"
 
 app.use("/users", userRouter)
-app.use("/products", productsRouter)
+app.use("/foodItems", foodItemsRouter)
 
 export { app }
